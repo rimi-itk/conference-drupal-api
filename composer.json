@@ -19,6 +19,8 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/restui": "^1.18",
         "drush/drush": "^10.3"
     },
     "conflict": {
