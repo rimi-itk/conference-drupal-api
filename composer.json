@@ -34,6 +34,9 @@
         "sort-packages": true
     },
     "scripts": {
+        "post-install-cmd": [
+            "ln -sf ../../scripts/git/hooks/pre-commit .git/hooks/pre-commit"
+        ],
         "check-coding-standards/phpcs": [
             "vendor/bin/phpcs --standard=phpcs.xml.dist"
         ],

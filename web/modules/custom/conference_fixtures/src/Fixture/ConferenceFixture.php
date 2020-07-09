@@ -3,11 +3,12 @@
 namespace Drupal\conference_fixtures\Fixture;
 
 /**
- * Class ConferenceFixture
+ * Class ConferenceFixture.
  *
  * @package Drupal\conference_fixtures\Fixture
  */
 class ConferenceFixture extends AbstractNodeFixture {
+
   /**
    * {@inheritdoc}
    */

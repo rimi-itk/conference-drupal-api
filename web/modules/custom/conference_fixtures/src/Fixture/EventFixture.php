@@ -5,11 +5,12 @@ namespace Drupal\conference_fixtures\Fixture;
 use Drupal\content_fixtures\Fixture\DependentFixtureInterface;
 
 /**
- * Class EventFixture
+ * Class EventFixture.
  *
  * @package Drupal\conference_fixtures\Fixture
  */
 class EventFixture extends AbstractNodeFixture implements DependentFixtureInterface {
+
   /**
    * {@inheritdoc}
    */
@@ -31,6 +32,9 @@ class EventFixture extends AbstractNodeFixture implements DependentFixtureInterf
     $event->save();
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public function getDependencies() {
     return [
       ConferenceFixture::class,
