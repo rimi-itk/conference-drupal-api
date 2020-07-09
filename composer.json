@@ -17,11 +17,16 @@
             "options": {
                 "symlink": false
             }
+        },
+        "drupal/conference_api": {
+            "type": "vcs",
+            "url": "https://github.com/OS2Conference/drupal-module-conference_api"
         }
     },
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^2.3",
+        "drupal/conference_api": "dev-main",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",

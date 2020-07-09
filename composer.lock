@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf24acd67bd06204a7f4b32b648603c0",
+    "content-hash": "125d2fedee27fcc79e3e00cc41ea8b69",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1354,6 +1354,55 @@
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
             }
+        },
+        {
+            "name": "drupal/conference_api",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2Conference/drupal-module-conference_api.git",
+                "reference": "9c939d701726afc65bc6a0cc50b4ba16f92798d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2Conference/drupal-module-conference_api/zipball/9c939d701726afc65bc6a0cc50b4ba16f92798d0",
+                "reference": "9c939d701726afc65bc6a0cc50b4ba16f92798d0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3.1"
+            },
+            "type": "drupal-module",
+            "scripts": {
+                "check-coding-standards/phpcs": [
+                    "vendor/bin/phpcs --standard=phpcs.xml.dist"
+                ],
+                "check-coding-standards": [
+                    "@check-coding-standards/phpcs"
+                ],
+                "apply-coding-standards/phpcs": [
+                    "vendor/bin/phpcbf --standard=phpcs.xml.dist"
+                ],
+                "apply-coding-standards": [
+                    "@apply-coding-standards/phpcs"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikkel Ricky",
+                    "email": "rimi@aarhus.dk"
+                }
+            ],
+            "description": "Module implementing the Conference API",
+            "support": {
+                "source": "https://github.com/OS2Conference/drupal-module-conference_api/tree/main",
+                "issues": "https://github.com/OS2Conference/drupal-module-conference_api/issues"
+            },
+            "time": "2020-07-09T16:12:37+00:00"
         },
         {
             "name": "drupal/core",
@@ -6088,13 +6137,13 @@
             "dist": {
                 "type": "path",
                 "url": "web/modules/custom/conference_fixtures",
-                "reference": "46d51726b8a6eca9ff51a575a237e49483f4df2b"
+                "reference": "fe4249157a7a162aac037408462f6b4ba5c5c714"
             },
             "require": {
                 "drupal/content_fixtures": "^2.0",
                 "php": ">=7.0.0"
             },
-            "type": "drupal-module",
+            "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0+"
             ],
@@ -6221,6 +6270,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/conference_api": 20,
         "drupal/inline_entity_form": 5
     },
     "prefer-stable": true,
