@@ -27,9 +27,17 @@ Using `symfony` binary:
 ```sh
 docker-compose up -d
 symfony composer install
-symfony php vendor/bin/drush --yes site:install minimal
+symfony php vendor/bin/drush --yes site:install minimal --config-dir=../config/sync
 symfony local:server:start --port=8888 --daemon
 symfony php vendor/bin/drush --uri=https://127.0.0.1:8888 user:login
+```
+
+## Fixtures
+
+```
+symfony php vendor/bin/drush --yes pm:enable conference_fixtures
+symfony php vendor/bin/drush content-fixtures:list
+symfony php vendor/bin/drush content-fixtures:load
 ```
 
 ## JSON:API
@@ -38,7 +46,7 @@ https://www.drupal.org/project/jsonapi
 https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/jsonapi
 
 ```sh
-https://127.0.0.1:8888/jsonapi/node/conference_event
+https://127.0.0.1:8888/jsonapi/node/conference_conference
 
 # https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
 https://127.0.0.1:8888/jsonapi/node/conference_event?filter[event-title][path]=title&filter[event-title][operator]==&filter[event-title][value]=welcome

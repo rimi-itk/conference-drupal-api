@@ -1,0 +1,9 @@
+name: 'Conference fixtures'
+type: module
+description: 'Conference fixtures.'
+core_version_requirement: ^9
+package: Testing
+# version: VERSION
+dependencies:
+  - drupal:node
+

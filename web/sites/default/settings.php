@@ -756,6 +756,8 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+$settings['config_sync_directory'] = '../config/sync';
+
 /**
  * Load local development override configuration, if available.
  *
@@ -769,14 +771,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'db',
-  'username' => 'db',
-  'password' => 'db',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '32771',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_7kr8apvdizzMmoLR1PK5L7vhj433FYZAmzD01qGe7QOxiL77RGniQ20Tzb74ufUtSwayPcBl0A/sync';

@@ -16,11 +16,13 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^2.3",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/restui": "^1.18",
+        "drupal/toolbar_menu": "^2.2",
         "drush/drush": "^10.3"
     },
     "conflict": {
@@ -84,5 +86,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/content_fixtures": "^2.0"
     }
 }
