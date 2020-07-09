@@ -1,6 +1,4 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 8 projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -16,7 +14,9 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "drupal/admin_toolbar": "^2.3",
+        "drupal/coder": "^8.3.1",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
@@ -32,6 +32,20 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "check-coding-standards/phpcs": [
+            "vendor/bin/phpcs --standard=phpcs.xml.dist"
+        ],
+        "check-coding-standards": [
+            "@check-coding-standards/phpcs"
+        ],
+        "apply-coding-standards/phpcs": [
+            "scripts/phpcbf --standard=phpcs.xml.dist"
+        ],
+        "apply-coding-standards": [
+            "@apply-coding-standards/phpcs"
+        ]
     },
     "extra": {
         "drupal-scaffold": {

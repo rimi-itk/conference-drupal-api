@@ -40,6 +40,12 @@ symfony php vendor/bin/drush content-fixtures:list
 symfony php vendor/bin/drush content-fixtures:load
 ```
 
+## Conference API
+
+```sh
+https://127.0.0.1:8888/api/conference
+```
+
 ## JSON:API
 
 https://www.drupal.org/project/jsonapi

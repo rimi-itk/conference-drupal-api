@@ -1,8 +1,8 @@
-name: 'Conference fixtures'
+name: 'Conference API'
 type: module
-description: 'Conference fixtures.'
+description: 'Conference API.'
 core_version_requirement: ^9
 package: Conference
 # version: VERSION
 dependencies:
-  - drupal:node
+  - drupal:jsonapi
