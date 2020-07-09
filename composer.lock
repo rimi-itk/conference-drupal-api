@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1420aa19f1483239c0b3afe12561aed7",
+    "content-hash": "bf24acd67bd06204a7f4b32b648603c0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6081,6 +6081,34 @@
                 "standards"
             ],
             "time": "2020-05-08T10:20:59+00:00"
+        },
+        {
+            "name": "drupal/conference_fixtures",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "web/modules/custom/conference_fixtures",
+                "reference": "46d51726b8a6eca9ff51a575a237e49483f4df2b"
+            },
+            "require": {
+                "drupal/content_fixtures": "^2.0",
+                "php": ">=7.0.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mikkel Ricky",
+                    "email": "rimi@aarhus.dk"
+                }
+            ],
+            "description": "Conference fixtures.",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
         },
         {
             "name": "drupal/content_fixtures",
