@@ -1361,12 +1361,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Conference/drupal-module-conference_api.git",
-                "reference": "9c939d701726afc65bc6a0cc50b4ba16f92798d0"
+                "reference": "1ae8fa19a9d49dcfb73a2ddbe0fc471ac563a446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Conference/drupal-module-conference_api/zipball/9c939d701726afc65bc6a0cc50b4ba16f92798d0",
-                "reference": "9c939d701726afc65bc6a0cc50b4ba16f92798d0",
+                "url": "https://api.github.com/repos/OS2Conference/drupal-module-conference_api/zipball/1ae8fa19a9d49dcfb73a2ddbe0fc471ac563a446",
+                "reference": "1ae8fa19a9d49dcfb73a2ddbe0fc471ac563a446",
                 "shasum": ""
             },
             "require-dev": {
@@ -1402,7 +1402,7 @@
                 "source": "https://github.com/OS2Conference/drupal-module-conference_api/tree/main",
                 "issues": "https://github.com/OS2Conference/drupal-module-conference_api/issues"
             },
-            "time": "2020-07-09T16:12:37+00:00"
+            "time": "2020-07-09T16:43:48+00:00"
         },
         {
             "name": "drupal/core",
